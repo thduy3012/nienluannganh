@@ -1,0 +1,138 @@
+/* Reset CSS và Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Màu nền */
+    color: #333; /* Màu chữ */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    color: #4CAF50; /* Màu tiêu đề */
+    margin-bottom: 20px; /* Khoảng cách giữa các tiêu đề */
+}
+
+h2 {
+    text-align: center;
+    color: #4CAF50;
+    margin-top: -20px; /* Khoảng cách giữa tiêu đề và bảng */
+    margin-bottom: 20px; /* Khoảng cách giữa các tiêu đề */
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Form Styles */
+form {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333; /* Màu chữ cho nhãn */
+}
+
+form input[type="text"],
+form textarea {
+    width: calc(100% - 24px);
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font-size: 16px;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    font-size: 16px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Button Styles */
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.delete-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Link Styles */
+a {
+    text-decoration: none;
+    color: #2196F3;
+    /* color: #523020; */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Success and Error Messages */
+.success, .success-message {
+    color: green;
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+/* Hover Effects */
+tr:hover {
+    background-color: #ddd; /* Màu nền khi di chuột qua hàng */
+}

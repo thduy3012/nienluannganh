@@ -1,0 +1,100 @@
+/* Phần Product HTML */
+.title {
+    text-align: center;
+    font-size: 3rem;
+    padding: 0.5rem;
+    color: rgb(236, 35, 119);
+}
+
+.title span {
+    color: limegreen;
+}
+
+.product {
+    padding: 8rem 0;
+}
+
+.cake-product {
+    margin-bottom: 3rem;
+}
+
+.cake-product .subtitle {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #5ae096;
+}
+
+.cake-product .inner-cake-row {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+.cake-product .inner-cake-col {
+    background: #fff;
+    height: 30rem;
+    flex: 1 1 20rem;
+    padding: 1.2rem;
+    margin: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem .6rem rgb(236, 35, 119);
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+.cake-product .inner-cake-col:hover {
+    transform: translateY(-.5rem);
+}
+
+.cake-product .inner-cake-col img {
+    height: 15rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cake-product .inner-cake-col .cake-price p {
+    position: absolute;
+    width: 2.7rem;
+    height: auto;
+    margin-top: -2.2rem;
+    margin-left: -1rem;
+    padding: .8rem .1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5rem;
+    background: lightgray;
+    color: #000;
+}
+
+.cake-star {
+    color: #FFDF00;
+    position: absolute;
+    margin-top: 1.7rem;
+}
+
+.cake-product .inner-cake-col h2 {
+    padding: .5rem 0;
+    color: darkblue;
+    font-size: 1.6rem;
+    letter-spacing: .1rem;
+}
+
+.cake-product .inner-cake-col h3 {
+    color: gray;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.cake-product .inner-cake-col p {
+    color: gray;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: .5rem 0;
+}
+
+@media (max-width: 768px) {
+    .cake-product .inner-cake-col {
+        flex: 1 1 calc(100% - 2rem);
+    }
+}

@@ -1,0 +1,12 @@
+Array
+(
+    [vnp_Amount] => 0
+    [vnp_Command] => pay
+    [vnp_CreateDate] => 20241204164835
+    [vnp_Currency] => VND
+    [vnp_OrderInfo] => 
+    [vnp_OrderType] => other
+    [vnp_ReturnUrl] => http://localhost/cakesofbetty/vnpay_return.php
+    [vnp_TmnCode] => X0DM3ZMG
+    [vnp_TxnRef] => 673026
+)

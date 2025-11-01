@@ -1,0 +1,14 @@
+/* Phần chung cho trang web */
+html {
+    font-size: 15px;
+    scroll-behavior: smooth;
+}
+
+/* Thiết lập thanh cuộn */
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: rgb(67, 118, 108);
+}

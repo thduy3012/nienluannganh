@@ -1,0 +1,96 @@
+/* Phần Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(248, 250, 229);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 .2rem .3rem rgb(177, 148, 112);
+}
+
+header {
+    position: fixed; /* Cố định phần header */
+    top: 0; /* Hiển thị phần header ở trên cùng của trang */
+    width: 100%; /* Chiều rộng tối đa */
+    background-color: rgb(248, 250, 229); /* Màu nền cho phần header */
+    z-index: 1000; /* Đảm bảo phần header hiển thị trên các phần khác của trang */
+    box-shadow: 0 0.2rem 0.5rem rgb(177, 148, 112); /* Thêm đổ bóng nhẹ cho phần header */
+}
+
+/* Logo trong Header */
+header .logo img {
+    height: 5rem;
+}
+
+/* Thanh điều hướng */
+header .navigate ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+header .navigate ul li {
+    margin-left: 3rem;
+}
+
+header .navigate ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: rgb(118, 69, 59);
+    font-weight: 500;
+}
+
+header .navigate ul li a:hover,
+header .navigate ul li a.active {
+    color: rgb(12, 96, 12);
+}
+
+/* Biểu tượng Menu */
+header #menu {
+    font-size: 2rem;
+    color: rgb(12, 96, 12);
+    cursor: pointer;
+    display: none;
+}
+
+/* Điều hướng khi màn hình nhỏ */
+@media (max-width:768px) {
+    header #menu {
+        display: block;
+    }
+    header .navigate {
+        position: fixed;
+        top: 8rem;
+        left: 0;
+        width: 100%;
+        background: rgb(236, 35, 119);
+        transform: scaleY(0);
+        transform-origin: top;
+        opacity: 0;
+    }
+    header .navigate ul {
+        flex-flow: column;
+        padding: 1rem;
+    }
+    header .navigate ul li {
+        margin: 1rem;
+        width: 100%;
+    }
+    header .navigate ul li a {
+        display: block;
+        color: #000;
+        padding-left: 2rem;
+        border-right: .1rem solid #000;
+        font-size: 1rem;
+    }
+    header .navigate ul li a:hover,
+    header .navigate ul li a.active {
+        color: rgb(12, 96, 12);
+        border-color: rgb(12, 96, 12);
+    }
+}

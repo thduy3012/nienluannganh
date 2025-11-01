@@ -1,0 +1,92 @@
+/* Phần Contact */
+.contact {
+    padding-top: 8.5rem;
+}
+
+.cake-contact {
+    width: 100%;
+    background: whitesmoke;
+}
+
+.cake-contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cake-contact-col {
+    margin: 2rem;
+    flex: 1 1 20rem;
+    text-align: center;
+}
+
+.cake-contact-col .images {
+    border: 1px solid #fff;
+}
+
+.cake-contact-col img {
+    width: 90%;
+    height: auto;
+    margin: 1.5rem;
+    padding: 1rem;
+    flex: 1 1 21rem;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+}
+
+.cake-contact-col h1 {
+    padding: 1rem 0;
+    color: rgb(236, 35, 119);
+    letter-spacing: .1rem;
+}
+
+.cake-contact-col .social i {
+    padding: .8rem;
+    border: none;
+    border-radius: 1rem;
+    background: rgb(236, 35, 119);
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.cake-contact-col .social i:hover {
+    transition: 0.5s ease;
+    background: limegreen;
+    color: #fff;
+    cursor: pointer;
+}
+
+.cake-contact-col p {
+    padding: .5rem 0;
+    line-height: 1.5rem;
+    color: gray;
+}
+
+.cake-contact-col input,
+.cake-contact-col textarea {
+    width: 80%;
+    padding: 1rem;
+    margin-bottom: 1.2rem;
+    border: none;
+    border-bottom: .1rem dotted rgb(236, 35, 119);
+}
+
+.cake-contact-col textarea {
+    resize: none;
+}
+
+@media (max-width: 768px) {
+    .cake-contact-col img {
+        width: 100%;
+    }
+
+    .cake-contact-col h1 {
+        font-size: 1.5rem;
+    }
+
+    .cake-contact-col input,
+    .cake-contact-col textarea {
+        width: 100%;
+    }
+}

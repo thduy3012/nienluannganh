@@ -1,0 +1,135 @@
+/* Reset CSS và Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.6;
+    background-color: rgb(214, 218, 200);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: rgb(156, 175, 170);
+    color: rgb(251, 243, 213);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.order-info {
+    font-size: 24px;
+}
+
+/* Cart Styles */
+.cart {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgb(251, 243, 213);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(239, 188, 155);
+    padding: 10px 0;
+}
+
+.product-name {
+    font-weight: bold;
+}
+
+.product-price {
+    color: green;
+}
+
+.remove-from-cart {
+    background-color: rgb(239, 188, 155);
+    color: rgb(251, 243, 213);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.remove-from-cart:hover {
+    background-color: rgb(255, 105, 97);
+}
+
+.total {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Payment Form Styles */
+.payment-container {
+    margin-top: 20px;
+    background-color: rgb(214, 218, 200);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(156, 175, 170);
+}
+
+#checkout-btn {
+    background-color: rgb(85, 184, 76);
+    color: rgb(251, 243, 213);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#checkout-btn:hover {
+    background-color: rgb(69, 160, 73);
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgb(156, 175, 170);
+    color: rgb(251, 243, 213);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.thank-you {
+    font-size: 18px;
+}
